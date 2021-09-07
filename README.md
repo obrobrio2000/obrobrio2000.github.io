@@ -1,2 +1,2 @@
 # obrobrio2000.github.io
-giovannimagliocchetti.com
+www.giovannimagliocchetti.com
