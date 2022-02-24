@@ -1,44 +1,286 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        
+        <!--==================== SWIPER CSS====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--==================== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Giovanni Magliocchetti</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Giovanni Magliocchetti</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i>About
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Contacts
+                            </a>
+                        </li>
+
+                    </ul>
+                    
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/giovannimagliocchetti/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
     
-    <title>Giovanni Magliocchetti</title>
+                            <a href="https://github.com/obrobrio2000/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
 
-    <meta name="author" content="Giovanni Magliocchetti">
-    <meta name="description" content="Personal website for software engineer Giovanni Magliocchetti.">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+                            <a href="https://www.instagram.com/maggiovs/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram-alt"></i>
+                            </a>
+                        </div>
+    
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187">
 
-    <link href="./index_files/css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="./index_files/font-awesome.min.css">
-    <link href="./index_files/styles.css" rel="stylesheet">
-</head>
-<body>
-	<div id="content">
-		<p>
-			Hi, my name is <b>Giovanni Magliocchetti</b>.
-			<br><br>
-			I was born and raised in Ceccano, and then moved to Rome to begin my University studies. I'm currently pursuing a bachelor's degree in "Computer Science and Automation Engineering", specializing in the former. My desire since I was born is to become a Software Engineer, but I'm passionate about every single thing regarding computer science and technology. In fact, not only I'm interested in software, mobile and web development, but also in subjects like Artificial Intelligence, Machine Learning and CyberSecurity, which are becoming continuosly important in our everyday lives. I have a passion for all things creative, and I'm always looking to create meaningful experiences and memorable stories. 
-			<br><br>
-			I'm currently working on two personal projects: the first one is a small and simple Android app which enhances performance and battery saving on Samsung Android devices, the second one... is top secret (I can only say that it is about AI)!
-			<br><br>
-			When I'm not thinking in code or pixels, I love playing football and exercising, getting involved in teaching programs, travelling, and spending time with my friends.
-		</p>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/giovannimagliocchetti" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/obrobrio2000" target="_blank"><i class="fa fa-github-alt"></i></a>
-            <a href="mailto:giovimag123@gmail.com"><i class="fa fa-envelope"></i></a>
-            <a href="http://giovannimagliocchetti.com/resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
-        </div>
-	</div>
-	<div id="image-container">
-		<div id="image-0" class="image" style="background-image: url(&quot;./index_files/photos/img0.jpg&quot;);"></div>
-		<div id="image-1" class="image" style="background-image: url(&quot;./index_files/photos/img1.jpg&quot;);"></div>
-		<div id="image-2" class="image" style="background-image: url(&quot;./index_files/photos/img2.JPG&quot;);"></div>
-	</div>
+                                    <!--==================== 
+                                        Insert your image in the Img folder and Change your image |
+                                        Center your image with X: horizontal, Y: vertical 
+                                    ====================-->
+                                    <image class="home__blob-img" x="12" y="18" href="assets/img/home2.png"/>
+                            </svg>
+                        </div>
 
-	<script src="./index_files/styles.css"></script>
-    <script src="./index_files/css"></script>
-	<script src="./index_files/font-awesome.min.css"></script>
-    <script src="./index_files/jquery.min.js.download"></script>
-    <script src="./index_files/scripts.js.download" type="text/javascript"></script>
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'm Giovanni</h1>
+                            <h3 class="home__subtitle">Software Engineer & Fullstack Developer</h3>
+                            <p class="home__description">High level experience in software engineering and web development, producing quality work.</p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
 
-</body></html>
+                    
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">Currently obtaining a BSc in "Computer and System Engineering", willing to continue studies to achieve a MSc in "Engineering in Computer Science". Love the world of computers and technology in every form and always willing to learn about new subjects: not only software and web but also cybersecurity, networking, AI/ML/DL, and cloud. Extensive knowledge of Microsoft Windows, Linux, and Android environments. Italian mother tongue, particularly good knowledge of English and basic understanding of Spanish.
+                        </p>
+
+                        <div class="about__buttons">
+                            <!--==================== Change your CV ====================-->
+                            <a download="" href="assets/pdf/Giovanni-Magliocchetti-CV.pdf" class="button button--flex">
+                                Download CV <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle">My personal journey</span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                        </div>                      
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--=============== QUALIFICATION CONTENT 1 ===============-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--=============== QUALIFICATION 1 ===============-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Computer and System Engineering</h3>
+                                    <span class="qualification__subtitle">BSc @ Sapienza University of Rome</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2019 - 2022
+                                    </div>
+                                </div>
+    
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            
+                            <!--=============== QUALIFICATION 2 ===============-->
+                            <div class="qualification__data">                                 
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                          
+                                <div>
+                                    <h3 class="qualification__title">Engineering in Computer Science</h3>
+                                    <span class="qualification__subtitle">MSc @ Sapienza University of Rome</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022 - 2024
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!--=============== QUALIFICATION CONTENT 2 ===============-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--=============== QUALIFICATION 1 ===============-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Work in progress...</h3>
+                                </div>
+    
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+                        
+                        <div>
+                            <a onclick="alert('Sorry, but this contact form is still work in progress. In the meantime you can contact me on Instagram or LinkedIn!')" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Giovanni Magliocchetti</h1>
+                        <span class="footer__subtitle">Software Engineer & Frontend Developer</span>
+                    </div>
+
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/giovannimagliocchetti/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/obrobrio2000/" target="_blank" class="footer__social">
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/maggiovs/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        <!-- <a href="https://twitter.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; Giovanni Magliocchetti. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrollup" id="scroll-top">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SMTP JS ====================-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
